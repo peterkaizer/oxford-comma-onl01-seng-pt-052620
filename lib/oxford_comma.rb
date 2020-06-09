@@ -1,11 +1,11 @@
-def oxford_comma(fruits)
-  if    fruits.length == 1 
-        fruits.join
-  elsif fruits.length > 2 
-        fruits[-1].prepend("and ")
-        fruits.join(", ")
-  elsif fruits.length == 2 
-        fruits[-2] << " and " 
-        fruits.join
+def oxford_comma(frutas)
+  if frutas.length == 1 
+    frutas.join
+  elsif frutas.length == 2 
+    frutas[-2] << " and " 
+   frutas.join
+  elsif frutas.length > 2 
+    frutas[-1].prepend("and ")
+   frutas.join(", ")
   end
 end
